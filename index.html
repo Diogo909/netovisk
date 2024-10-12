@@ -10,8 +10,7 @@
             padding: 0;
             height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column; /* Flex direction for stacking elements */
             background-color: #091211; /* Cor de fundo para a página */
         }
         .container {
@@ -108,6 +107,24 @@
             width: 20px;
             height: 20px;
         }
+        .flexbox-background {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px; /* Altura da flexbox */
+            background-image: url('http://example.com/sua-imagem-de-fundo.jpg'); /* Substitua pelo URL da sua imagem */
+            background-size: cover; /* Ajusta a imagem para cobrir o contêiner */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Não repete a imagem */
+            padding: 20px; /* Espaçamento interno */
+            flex-direction: column; /* Permite que o conteúdo seja empilhado verticalmente */
+        }
+        .flexbox-content {
+            color: #ffffff; /* Cor do texto */
+            text-align: center; /* Centraliza o texto */
+            font-size: 24px; /* Tamanho da fonte */
+            max-width: 80%; /* Largura máxima do conteúdo */
+        }
     </style>
 </head>
 <body>
@@ -127,6 +144,13 @@
                 <input type="text" placeholder="Buscar...">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
+        </div>
+    </div>
+
+    <div class="flexbox-background">
+        <div class="flexbox-content">
+            <h1>Bem-vindo ao Meu Site!</h1>
+            <p>Explore nossos conteúdos e divirta-se!</p>
         </div>
     </div>
 
