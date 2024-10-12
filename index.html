@@ -15,20 +15,23 @@
             color: #fff; 
         }
 
-        header {
-            height: 85px;
-            width: 100%;
-            overflow: hidden;
+        .container {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #091211;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
         }
 
-        .logo img {
-            height: 200px; 
+        .left-column, .center-column, .right-column {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-column img {
+            max-height: 200px;
             width: auto;
-            object-fit: cover;
         }
 
         .navbar {
@@ -98,10 +101,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 500px; 
+            height: 500px;
             width: 100%; 
             background-image: url('assets/backgroundSite.jpeg'); 
-            background-size: cover;
+            background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat;
         }
@@ -112,7 +115,7 @@
             font-size: 24px;
             max-width: 80%;
         }
-
+        
         footer {
             text-align: center;
             padding: 20px 10px;
