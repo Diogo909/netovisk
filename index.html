@@ -10,21 +10,21 @@
             padding: 0;
             height: 100vh;
             display: flex;
-            flex-direction: column; /* Flex direction for stacking elements */
-            background-color: #091211; /* Cor de fundo para a página */
+            flex-direction: column;
+            background-color: #091211;
+            color: #fff; /* Cor do texto */
         }
         .container {
             display: flex;
             width: 100%;
-            max-width: 1200px; /* Largura máxima do contêiner */
-            justify-content: space-between; /* Espaço entre as colunas */
+            max-width: 1200px;
+            justify-content: space-between;
         }
         .left-column, .center-column, .right-column {
-            flex: 1; /* Todas as colunas ocupam o mesmo espaço */
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            max-height: 85px; /* Altura máxima para a coluna da esquerda */
         }
         .left-column img {
             max-height: 200px;
@@ -32,8 +32,7 @@
         }
         .navbar {
             display: flex;
-            width: 100%;
-            justify-content: center; /* Centraliza a barra de navegação */
+            justify-content: center;
         }
         .navbar a {
             color: #d5d5d5;
@@ -72,7 +71,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             padding: 5px;
             max-width: 500px;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
         .search-bar input {
             border: none;
@@ -83,47 +81,51 @@
             font-size: 16px;
             background-color: #1f1f1f;
             color: #fff;
-            transition: background-color 0.3s ease;
         }
         .search-bar input::placeholder {
             color: #888;
-        }
-        .search-bar input:focus {
-            background-color: #333;
-        }
-        .search-bar button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 50%;
-            margin-left: -40px;
-            transition: background-color 0.3s ease;
-        }
-        .search-bar button:hover {
-            background-color: #333;
-        }
-        .search-bar button img {
-            width: 20px;
-            height: 20px;
         }
         .flexbox-background {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 500px; /* Altura da flexbox */
-            background-image: url('assets/backgroudSite.jpeg'); /* Substitua pelo URL da sua imagem */
-            background-size: cover; /* Ajusta a imagem para cobrir o contêiner */
-            background-position: center; /* Centraliza a imagem */
-            background-repeat: no-repeat; /* Não repete a imagem */
-            padding: 20px; /* Espaçamento interno */
-            flex-direction: column; /* Permite que o conteúdo seja empilhado verticalmente */
+            height: 500px;
+            background-image: url('assets/backgroudSite.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+            flex-direction: column;
         }
         .flexbox-content {
-            color: #ffffff; /* Cor do texto */
-            text-align: center; /* Centraliza o texto */
-            font-size: 24px; /* Tamanho da fonte */
-            max-width: 80%; /* Largura máxima do conteúdo */
+            text-align: center;
+            font-size: 24px;
+            max-width: 80%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #091211;
+        }
+        .footer-logo img {
+            max-width: 120px;
+        }
+        .footer-text, .footer-bottom {
+            margin: 10px 0;
+        }
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+        .design-credit {
+            font-size: 11px;
+        }
+        .design-credit span {
+            display: inline-block;
+            padding: 6px;
+            background-color: #000000;
+            color: #4ef01a;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -153,6 +155,18 @@
             <p>Explore nossos conteúdos e divirta-se!</p>
         </div>
     </div>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="assets/logotipo site.svg" alt="NeToVisK Logo">
+        </div>
+        <div class="footer-text">
+            <p>Copyright © 2024 NeToVisK. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-bottom">
+            <p class="design-credit">Design by: <span>NeToVisK</span></p>
+        </div>
+    </footer>
 
     <script>
         const currentUrl = window.location.href;
